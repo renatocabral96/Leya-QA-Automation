@@ -69,7 +69,7 @@ public class ThirdReqTest {
     
     public void closeCookiesPrompt() {
         try {
-            WebElement cookiesButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#cookiescript_close"))); // Replace with the actual selector
+            WebElement cookiesButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#cookiescript_close")));
             cookiesButton.click();
         } catch (Exception e) {
             System.out.println("No cookies prompt found.");
