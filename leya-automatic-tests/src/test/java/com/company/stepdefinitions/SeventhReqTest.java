@@ -60,7 +60,8 @@ public class SeventhReqTest {
         
         WebElement alphabeticOrder = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"search-filter-offcanvast\"]/div[2]/div/div[2]/div/div[2]/div/ul/li[1]/a")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", alphabeticOrder);
-        
+
+        //Wait for the page to load completely
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
