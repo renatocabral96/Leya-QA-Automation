@@ -46,7 +46,7 @@ public class FifthReqTest {
         WebElement sun = driver.findElement(By.cssSelector("#darkmode > a > i"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", sun);
         
-        //Used to see the result on the webpage
+        //Used to see the result on the webpage, but this portion of code is not needed
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
