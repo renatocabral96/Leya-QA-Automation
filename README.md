@@ -29,6 +29,6 @@ Before running the tests, ensure you have the following software installed:
   - Sixth Requirement:
     Tests a user login on the website and confirms its success
 
-  -Seventh Requiremtment:
+  - Seventh Requiremtment:
     Tests if the filters applied to the books using the filter button is done successfully
 
