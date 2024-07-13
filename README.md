@@ -19,10 +19,12 @@ Before running the tests, ensure you have the following software installed:
    cd leya-automatic-tests
 
 3. **Execute all tests**
+   
    mvn clean install
    mvn test
 
 5. **Execute individual tests**
+   
    mvn -Dtest=<name_of_the_test> test
 
 ## Extra Requirements
