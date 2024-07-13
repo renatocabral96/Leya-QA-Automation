@@ -71,13 +71,4 @@ public class SixthReqTest {
             driver.quit();
         }
     }
-    
-    public void closeCookiesPrompt() {
-        try {
-            WebElement cookiesButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#cookiescript_close"))); // Replace with the actual selector
-            cookiesButton.click();
-        } catch (Exception e) {
-            System.out.println("No cookies prompt found.");
-        }
-    }  
 }
