@@ -54,13 +54,12 @@ public class SixthReqTest {
         WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"login-pass\"]")));
         password.sendKeys("password1996");
         
-        WebElement loginButton = driver.findElement(By.cssSelector("#pjax-container > section > div > div > div > form > div.form-group > button")); // Replace with the actual locator
+        WebElement loginButton = driver.findElement(By.cssSelector("#pjax-container > section > div > div > div > form > div.form-group > button"));
         loginButton.click();
         
         WebElement name = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"dropdownMenuLink20\"]")));
         String dataTagValue = name.getAttribute("data-tag");
-
-        // Verify the data-tag attribute value
+        
         assertEquals("testacc", dataTagValue, "The data-tag attribute is not 'testacc'");
     
       
